@@ -6,14 +6,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Movies',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: const Text('Movies'),
         ),
-        body: const Center(
-          child: const Text('Hello World'),
-        ),
+        body: Column(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text("Discover",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold
+                )
+              ),
+            )
+          ],
+        )
       ),
     );
   }
